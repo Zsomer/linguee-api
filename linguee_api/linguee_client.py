@@ -25,11 +25,11 @@ class LingueeClient:
         *,
         page_downloader: IDownloader,
         page_parser: IParser,
-        max_redirects=MAX_REDIRECTS,
+        max_redirects=1999999,
     ):
         self.page_downloader = page_downloader
         self.page_parser = page_parser
-        self.max_redirects = max_redirects
+        self.max_redirects = 1999999
 
     async def process_search_result(
         self,
