@@ -42,11 +42,11 @@ ENV PATH="/app/.venv/bin:$PATH"
 COPY . /app/
 
 # Declare port FastAPI will use
-EXPOSE 8000
+EXPOSE 5000
 
 # Declare the VOLUME and use it as a cache directory
 VOLUME /cache
 ENV CACHE_DIRECTORY=/cache
 
 # Command to run on container start
-CMD ["uvicorn", "linguee_api.api:app", "--host", "0.0.0.0", "--port", "8000"]
+CMD ["uvicorn", "linguee_api.api:app", "--host", "0.0.0.0", "--port", "5000"]
