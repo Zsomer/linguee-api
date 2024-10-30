@@ -57,7 +57,7 @@ LANGUAGES = {
     "sv": "swedish",
     "zh": "chinese",
 }
-MAX_REDIRECTS = 5
+MAX_REDIRECTS = 10000
 PROJECT_DESCRIPTION = """
 <p>
     <a href="https://linguee.com" target="_blank">Linguee</a> provides excellent
