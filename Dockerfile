@@ -42,7 +42,7 @@ ENV PATH="/app/.venv/bin:$PATH"
 COPY . /app/
 
 # Declare port FastAPI will use
-EXPOSE 5000
+EXPOSE 8000
 
 # Declare the VOLUME and use it as a cache directory
 VOLUME /cache
